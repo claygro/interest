@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple interest calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background">
+        <h1>calculator</h1>
+        <form>
+          <label for="principle">principle: </label>
+          <input type="number" id="principle" required />
+          <label for="rate">Rate: </label>
+          <input type="number" id="rate" required />
+          <label for="time">Time: </label>
+          <input type="number" id="time" required />
+          <button onclick="calculate()" type="button">Submit</button>
+          <p>total: <span id="total-amount">$0.00</span></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
